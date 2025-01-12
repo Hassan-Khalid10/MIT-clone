@@ -1,0 +1,268 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #8e2f2b; /* Dark red */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    header .logo-img {
+        width: 50px; /* Set logo image size */
+        height: 50px;
+    }
+
+    header .logo-text {
+        font-size: 0.8rem; /* Smaller text size */
+        line-height: 1.2; /* Adjust line height for better readability */
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+        header .logo-text span {
+            display: block; /* Ensure text is displayed in separate lines */
+        }
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+    nav ul li {
+        display: inline;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+/* Search Box Section */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+    .search-container input {
+        padding: 10px;
+        font-size: 1rem;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* Updates Section */
+.updates h2 {
+    color: black; /* Simple black color */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-decoration: underline; /* Underlined text */
+    display: inline; /* Keep the heading and text in a single line */
+    cursor: pointer; /* Show pointer cursor to indicate it's interactive */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    .updates h2:hover {
+        color: #ff7f32; /* Bright orange color on hover */
+    }
+
+.updates p {
+    color: #333;
+    display: inline; /* Ensure text appears in a single line with the heading */
+}
+
+/* Hero Section */
+.hero {
+    background-color: white; /* White background */
+    color: #8e2f2b; /* Dark red text */
+    text-align: center;
+    padding: 100px 0;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        color: #8e2f2b; /* Dark red */
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        background-color: #ff7f32; /* Bright orange */
+        color: white;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+        .hero button:hover {
+            background-color: #e66a2b; /* Slightly darker bright orange */
+        }
+
+/* Subscribe Section */
+.subscribe {
+    background-color: #ff7f32; /* Bright orange */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+    .subscribe h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .subscribe button {
+        padding: 10px 20px;
+        background-color: #e66a2b; /* Slightly darker bright orange */
+        color: white;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+        .subscribe button:hover {
+            background-color: #8e2f2b; /* Dark red */
+        }
+
+/* Footer Section */
+footer {
+    background-color: #8e2f2b; /* Dark red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+    footer .social a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        footer .social a:hover {
+            text-decoration: underline;
+        }
+/* Large Image Section */
+.large-image-section {
+    text-align: center; /* Center the content */
+    margin-top: 50px; /* Add some margin above for spacing */
+}
+
+.large-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.image-text {
+    margin-top: 20px; /* Space between image and text */
+}
+
+    .image-text p {
+        font-size: 1.2rem; /* Adjust font size for text */
+        font-weight: bold; /* Make the text bold */
+        color: #333; /* Use a dark color for text */
+    }
+/* More from the Community Section */
+.community {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+    .community h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: black; /* Set the color of the "More from the Community" heading to black */
+    }
+/* More from the Community Section */
+.community {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+    /* Center the heading */
+    .community h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: black; /* Set the color of the heading to black */
+        text-align: center; /* Center align the heading */
+    }
+
+/* Container for the community items */
+.community-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in a row */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the items in the container */
+    padding: 20px;
+}
+
+/* Styling for each community item */
+.community-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+    .community-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .community-item h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .community-item p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+/* For mobile responsiveness, adjust to 1 column */
+@media (max-width: 768px) {
+    .community-container {
+        grid-template-columns: 1fr; /* Stack items in 1 column on smaller screens */
+    }
+}
+
